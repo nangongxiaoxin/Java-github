@@ -1,12 +1,13 @@
 
-public class Blak {// 创建类
-	public static void main(String[] args) {// 主方法
+public class Blak {
+	public static void main(String[] args) {
 		String str = "  Java class  ";
-		System.out.println("原字符串为：" + str);// 去掉前的结果
-		System.out.println("原字符串长度：" + str.length());// 去掉前的长度
-		// 将str中头部和尾部的空格去掉
-		System.out.println("现字符串长度：" + str.trim().length());// 去掉后的长度
-		// String str1 =str.trim();
-		System.out.println(str.trim());// 去掉后的结果
+		System.out.println("去掉空格前为：" + str);
+		System.out.println("字符串原长度为：" + str.length());
+		// 将str去掉前部和尾部的空格后输出
+		str = str.trim();
+		// System.out.println("去掉空格后的长度：" + str.trim().length());
+		System.out.println("去掉空格后为：" + str);
+		System.out.println("去掉空格后的长度：" + str.length());
 	}
 }
